@@ -1,0 +1,111 @@
+@media (max-width: 788px) {
+  body .box {
+    min-width: 350px !important;
+  }
+  body .box form fieldset .box-date .box-date-input {
+    display: block;
+    margin: 5px !important;
+    margin-top: 5px;
+  }
+}
+@media (max-width: 425px) {
+  br {
+    display: none;
+  }
+
+  body .box {
+    margin: 0 10px;
+    min-width: 80% !important;
+  }
+  body .box .box-input {
+    margin: 10% 0;
+  }
+  body .box .box-date .box-date-input {
+    height: 15px;
+  }
+}
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  background-image: linear-gradient(to right, #1B5478, #0b293d);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .box {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #e0d3c1;
+  font-size: 16px;
+  padding: 15px;
+  border-radius: 10px;
+  min-width: 350px;
+}
+body .box form fieldset {
+  border: solid 2px #E4A14A;
+}
+body .box form fieldset legend {
+  font-weight: bold;
+  background-color: #E4A14A;
+  padding: 5px;
+  border-radius: 2px;
+  margin: auto;
+  color: #0b293d;
+}
+body .box form fieldset .box-input {
+  position: relative;
+}
+body .box form fieldset .box-input .box-input-user {
+  background: none;
+  border: none;
+  border-bottom: 1px solid white;
+  outline: none;
+  font-size: 15px;
+  width: 100%;
+  letter-spacing: 1px;
+  color: #e0d3c1;
+}
+body .box form fieldset .box-input .box-input-label {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  pointer-events: none;
+  transition: 0.5s;
+}
+body .box form fieldset .box-input .box-input-user:focus ~ .box-input-label,
+body .box form fieldset .box-input .box-input-user:valid ~ .box-input-label {
+  top: -20px;
+  font-size: 12px;
+  color: #E4A14A;
+}
+body .box form fieldset .box-input .box-input-user:valid {
+  border-color: #E4A14A;
+}
+body .box form fieldset .box-input .box-genero {
+  margin: 0 !important;
+}
+body .box form fieldset .box-input #date {
+  border: none;
+  position: relative;
+  padding: 6px;
+  border-radius: 4px;
+  outline: none;
+  font-size: 14px;
+  margin: 0 10px;
+}
+body .box form fieldset #submit {
+  border: none;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background-image: linear-gradient(to right, #73bcf7, #effd9b);
+  color: #1B5478;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+body .box form fieldset #submit:hover {
+  background-image: linear-gradient(to right, #4aacfc, #b7c954);
+}
+
+/*# sourceMappingURL=estilo.css.map */

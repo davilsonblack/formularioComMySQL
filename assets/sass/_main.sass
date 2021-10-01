@@ -1,0 +1,83 @@
+@use "variables"
+@use "responsive"
+
+body
+    height: 100vh
+    margin: 0
+    font-family: 'Lato', sans-serif
+    background-image: linear-gradient(to right, variables.$color-primary, variables.$color-bg-primary)
+    display: flex
+    align-items: center
+    justify-content: center
+    .box
+        background-color: rgba(0,0,0,0.4)
+        color: variables.$color-cream
+        font-size: 16px
+        padding: 15px
+        border-radius: 10px
+        min-width: 350px
+        form
+            fieldset
+                border: solid 2px variables.$color-gold
+                
+                legend
+                    font-weight: bold
+                    background-color: variables.$color-gold
+                    padding: 5px
+                    border-radius: 2px
+                    margin: auto
+                    color: variables.$color-bg-primary
+                .box-input
+                    position: relative
+                    .box-input-user
+                        background: none
+                        border: none
+                        border-bottom: 1px solid white
+                        outline: none
+                        font-size: 15px
+                        width: 100%
+                        letter-spacing: 1px
+                        color: variables.$color-cream
+                    .box-input-label
+                        position: absolute
+                        top: 0px
+                        left: 0
+                        pointer-events: none
+                        transition: .5s
+                    // Quando eu clicar no input ~  quero  execute uma ação no input label
+                    .box-input-user:focus       ~        .box-input-label,
+                    // Quando o input estiver valido ~ quero que execute isso
+                    .box-input-user:valid      ~          .box-input-label
+                        top: -20px
+                        font-size: 12px
+                        color: variables.$color-gold
+                    .box-input-user:valid
+                        border-color: variables.$color-gold
+                    .box-genero
+                        margin: 0 !important
+                        
+                        
+                    #date
+                        border: none
+                        position: relative
+                        padding: 6px
+                        border-radius: 4px
+                        outline: none
+                        font-size: 14px
+                        margin: 0 10px
+                #submit
+                    border: none
+                    width: 100%
+                    padding: 10px
+                    border-radius: 5px
+                    background-image: linear-gradient( to right, #73bcf7, #effd9b) 
+                    color: variables.$color-primary
+                    font-size: 15px
+                    font-weight: 700
+                    cursor: pointer
+                    &:hover
+                        background-image: linear-gradient( to right, #4aacfc, #b7c954)
+                        
+
+
+
